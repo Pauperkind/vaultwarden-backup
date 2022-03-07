@@ -11,10 +11,10 @@
 # Initialize variables
 init() {
   if [ "$TIMESTAMP" = true ]; then
-    TIMESTAMP_PREFIX="$(date "+%F-%H%M%S")_"
+    TIMESTAMP_PREFIX="$(date "+%F-%H%M%S")"
   fi
 
-  BACKUP_FILE_DB=$BACKUP_DIR/${TIMESTAMP_PREFIX}db.sqlite3
+  BACKUP_FILE_DB=$BACKUP_DIR/db.sqlite3
   BACKUP_FILE_DATA=$BACKUP_DIR/${TIMESTAMP_PREFIX}data.tar.gz
 
   # Check if db file is accessible and exit otherwise
