@@ -15,7 +15,7 @@ init() {
   fi
 
   BACKUP_FILE_DB=$BACKUP_DIR/db.sqlite3
-  BACKUP_FILE_DATA=$BACKUP_DIR/${TIMESTAMP_PREFIX}data.tar.gz
+  BACKUP_FILE_DATA=$BACKUP_DIR/${TIMESTAMP_PREFIX}.tar.gz
 
   # Check if db file is accessible and exit otherwise
   if [ ! -e "$VW_DATABASE_URL" ]; then 
